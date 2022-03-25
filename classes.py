@@ -1,4 +1,3 @@
-
 class Player:
     def __init__(self, name : str, wins : int):
         self.name = name
@@ -9,18 +8,14 @@ class Player:
     
     def get_wins(self):
         return self.wins
-
-# def create_player():
-#     print("Hello Player, what is your name?")
-#     name = input("Name: ")
-#     wins = 0
-#     return_player = Player(name, wins)
-#     return return_player
-
+        
 def add_players():
+    # Creates a list for the quiz players.
     players = []
     wins = 0
+
     player_count = int(input("How many players are going to play the quiz?\nAmount: "))
+    # Takes in a number of players that will be in the quiz.
     for _ in range(player_count):
         pn = input("Name: ")
         players.append(pn)
@@ -70,4 +65,3 @@ class Quiz:
 
     def get_winner(self):
         return self.winner
-
