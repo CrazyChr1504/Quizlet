@@ -82,7 +82,7 @@ def main():
         i += 1
 
     # Prints who won the quiz.
-    print("And the player that one is:")
+    print("And the player that won is:")
     sleep(1)
     print(pw)
 
